@@ -1,0 +1,279 @@
+body{
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #f4f4f4;
+    flex-direction: column;
+    background-image: url(water.jpg);
+    background-size: cover;
+    width: 100%;
+}
+
+.container{
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.1);
+    background: white;
+    border-radius: 8px;
+    margin-top: 40px;
+    background-image: url(new.png);
+    background-size: 450px 220px;
+    background-size: cover;
+    margin-bottom: 100px;
+}
+
+
+#progressBar{
+    height:20px;
+    width:50%;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    margin-top: 110px;
+    margin-bottom: 20px;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    position: relative;
+}
+
+#progress{
+    height: 100%;
+    width: 33%;
+    background-color: #fff;
+    border-radius: 10px;
+    position: relative;
+    transition: width 0.4s ease;
+}
+
+#progressValue{
+    
+    text-align: right;
+    padding-top: 35px;
+    font-size: larger;
+}
+
+#progress::before,#progress::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background:linear-gradient(90deg,#fb0094,#0000ff,#00ff00,#ffff00,#fb0094,#0000ff,#00ff00,#ffff00,#fb0094) ;
+    animation: animate 20s linear infinite;
+    background-size: 500%;
+    
+}
+#progress::after{
+    filter:blur(20px);
+   
+}
+@keyframes animate{
+    0%{
+        background-position: 0 0;
+    }
+    0%{
+        background-position: 100% 0;
+    }
+}
+
+.step{
+    text-align: center;
+}
+
+h2{
+margin:0 0 20px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+    width:calc(100% - 24px);
+    padding:10px;
+    margin-bottom:20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button{
+    padding: 10px 20px;
+    border:none;
+    background-color: #5c67f2;
+    color:white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover{
+    background-color: rgb(240, 80, 160);
+}
+
+button:focus{
+    outline:none;
+}
+
+.start{
+    background-color: #4caf50;
+    text-align: center;
+    padding: 100px;
+    background-image: url(img.png);
+    background-repeat: no-repeat;
+    background-size: 500px 330px;
+}
+
+h4,label{
+    color: whitesmoke;
+}
+label{
+    font-size: large;
+}
+
+#summaryContent,h2{
+    color: white;
+    
+}
+
+.prof{
+    color: black;
+}
+
+#summary{
+    background-image: url(output.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 30px;
+    border-radius: 10px;
+}
+#sub{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/*navigation bar */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    padding: 8px;
+    background-color: #333333;
+    color: #fff;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .logo img {
+    height: 75px;
+    width: 50px;
+    margin-right: 10px;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+  }
+  .navbar ul li {
+    margin: 0;
+  }
+  
+  .navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  .navbar ul li a:hover {
+    background-color: #555555;
+    border-radius: 5px;
+    padding-top: 30px;
+    padding-bottom: 40px;
+  }
+  
+  .allright {
+    text-align: center;
+    color: white;
+  }
+  
+  .footer {
+    background-color: black;
+    padding: 5px 2px;
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+  }
+  
+  .footer .row a {
+    text-decoration: none;
+    color: gray;
+    transition: 0.5s;
+  }
+  
+  .footer .row ul {
+    padding: 0;
+  }
+  
+  .footer .row ul li {
+    display: inline-block;
+    margin: 0px 30px;
+  }
+  
+  .footer .row a i {
+    font-size: 2em;
+    margin: 0% 1%;
+  }
+  
+  
+  @media (max-width: px) {
+    .logo img {
+        height: 50px;
+        width: 35px;
+    }
+    
+    .navbar ul {
+        flex-direction: column;
+    }
+  
+    .navbar ul li a {
+        padding: 8px;
+    }
+  
+    .navbar ul li a:hover {
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+  
+    .footer .row ul li {
+        margin: 0px 15px;
+    }
+  
+    .footer .row a i {
+        font-size: 1.5em;
+    }
+  }
+  
+  @media (max-width: 1000px) {
+    header {
+        flex-direction: column;
+    }
+  
+    .navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .footer .row ul li {
+        margin: 0px 10px;
+    }
+  
+    .footer .row a i {
+        font-size: 1.2em;
+    }
+  }

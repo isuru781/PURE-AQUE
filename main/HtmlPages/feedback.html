@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Feedback</title>
+  <link rel="stylesheet" href="../CSS/feedbackstyle.css">
+
+  <link rel="icon" type="image/png" href="../images/tabIcon/feeIcon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <img src="../images/logo.png" alt=" Logo">
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../HtmlPages/home.html">Home</a></li>
+          <li><a href="../HtmlPages/Saarujan/gallery.html">Gallery</a></li>
+          <li><a href="../HtmlPages/shop/shop.html">Shop</a></li>
+          <li><a href="../HtmlPages/user_profile3/userprofile.html">User Profile</a></li>
+          <li class="active"><a href="../HtmlPages/feedback.html">Feedback</a></li>
+          <li><a href="../HtmlPages/Saarujan/sitemap.html">Sitemap</a></li>
+          <li><a href="../HtmlPages/team3/team.html">Team</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <form id="feedback-form">
+      <h2>Feedback Form</h2>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required placeholder="Enter your name here">
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required placeholder="Enter your email here">
+
+      <label>Rating:</label>
+      <div class="stars">
+        <input type="radio" id="star5" name="rating" value="5" required />
+        <label for="star5" class="fa fa-star"></label>
+        <input type="radio" id="star4" name="rating" value="4" />
+        <label for="star4" class="fa fa-star"></label>
+        <input type="radio" id="star3" name="rating" value="3" />
+        <label for="star3" class="fa fa-star"></label>
+        <input type="radio" id="star2" name="rating" value="2" />
+        <label for="star2" class="fa fa-star"></label>
+        <input type="radio" id="star1" name="rating" value="1" />
+        <label for="star1" class="fa fa-star"></label>
+      </div><br>
+
+      <label for="comment">Comment:</label>
+      <textarea id="comment" name="comment" rows="4" required placeholder="Enter your message here"></textarea>
+
+      <label for="subject">Subject (Optional):</label>
+      <input type="text" id="subject" name="subject">
+
+      <label for="category">Category (Optional):</label>
+      <select id="category" name="category">
+          <option value="">Select Category</option>
+          <option value="general">General</option>
+          <option value="product">Product</option>
+          <option value="service">Service</option>
+      </select>
+
+      <div class="button">
+        <button type="button" onclick="previewFeedback()">Preview</button>
+        <button type="submit" id="submit-button">Submit</button>
+      </div>
+
+
+    </form>
+
+    <div id="preview-section" style="display:none;" class="button">
+      <h3>Preview Feedback</h3>
+      <p><strong>Name:</strong> <span id="preview-name"></span></p>
+      <p><strong>Email:</strong> <span id="preview-email"></span></p>
+      <p><strong>Rating:</strong> <span id="preview-rating"></span></p>
+      <p><strong>Comment:</strong> <span id="preview-comment"></span></p>
+      <p><strong>Subject:</strong> <span id="preview-subject"></span></p>
+      <p><strong>Category:</strong> <span id="preview-category"></span></p>
+      <button type="button" onclick="editFeedback()">Edit</button>
+      <button type="submit" onclick="submitFeedback()">Submit</button>
+    </div>
+
+    <div id="confirmation-section" style="display:none;">
+      <h3>Thank you for your feedback!</h3>
+      <p>Your feedback has been submitted successfully.</p>
+    </div>
+  </div>
+
+
+  <script src="../JavascriptFiles/feedbackjs.js"></script>
+
+  <footer>
+    <div class="footer">
+      <div class="row">
+        <a id="facebook" href="https://www.facebook.com/profile.php?id=100008432291126&mibextid=ZbWKwL"><i class="fa fa-facebook"></i></a>
+        <a id="insta" href="https://www.instagram.com/"><i class="fa fa-instagram"></i></a>
+        <a id="whatsapp" href="https://wa.me/710195136"><i class="fa fa-whatsapp"></i></a>
+        <a id="linkedin" href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+        <a id="twitter"  href="https://x.com/?lang=en"><i class="fa fa-twitter"></i></a>
+      </div>
+      <div class="row">
+          <ul>
+              <li><a href="#">Back to TOP</a></li>
+              <li><a href="">Contact us </a></li>
+              <li><a href="../HtmlPages/user_profile3/userprofile.html">User Profile</a></li>
+              <li><a href="../HtmlPages/Saarujan/sitemap.html">Sitemap</a></li>
+              <li><a href="../HtmlPages/pageEditor.html" target="_blank">Editors page</a></li>
+          </ul>
+      </div>
+    </div>
+    <hr>
+    <p class="allright">&copy; 2024 | Pure Aqua Website | All Rights Reserved</p>
+  </footer>
+</body>
+</html>

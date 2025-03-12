@@ -1,0 +1,193 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    background: url(../images/water.jpg);
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333333;
+    color: #fff;
+  }
+  
+  .logo img {
+    height: 50px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+  }
+  
+  nav ul li a:hover,
+  nav ul li.active a {
+    background-color: #555555;
+    border-radius: 5px;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  .mission {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  
+  .mission p {
+    font-size: 1.2em;
+    color: #696965;
+    border-radius: 10px;
+    background-color: #ffffff;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  
+  
+.facts{  margin-bottom: 15px;}
+  
+
+
+
+
+#title {
+    text-align: center;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 50px;
+    max-width: 300px;
+    height: auto;
+    margin: 10px auto;
+    font-size: 2.5em;
+    color: #333;
+}
+
+.Description {
+  max-width: 100000px;
+  height: auto;
+  text-align: justify;
+  border-radius: 20px;
+  font-size: 18px;
+  margin: 40px auto;
+  background-color: rgb(223, 250, 248);
+}
+
+.para1 {
+  max-width: 100000px;
+  height: auto;
+  text-align: justify;
+  border-radius: 20px;
+  font-size: 18px;
+  margin: 40px auto;
+  background-color: rgb(202, 231, 217);
+}
+
+h2 {font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;}
+
+.Description, .para1 {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;}
+
+.BackImage {width: 30%;
+  height: 100%;
+  border-radius: 30px;}
+
+.allright {text-align: center;}
+
+
+
+
+
+  .footer{
+    background-color: black;
+    padding     :5px 2px;
+    font-family : 'Play', sans-serif;
+    text-align  :center;
+    }
+    
+  .footer .row{
+    width     :100%;
+    margin    :1% 0%;
+    padding   :0.6% 0%;
+    color     :gray;
+    font-size :0.8em;
+    }
+    
+  .footer .row a{
+    text-decoration :none;
+    color           :gray;
+    transition      :0.5s;
+    }
+    
+    
+  .footer .row a:hover{
+    color     :#c705f8;
+    filter    : drop-shadow(0px 0px 20px rgb(188, 253, 76));
+    margin    : 30px;
+    }
+  
+  #facebook:hover{
+    color   :#001efd;
+    filter  : drop-shadow(0px 0px 20px #001efd)
+    }
+
+
+
+      #insta:hover{
+    color   :#ff009d;
+    filter  : drop-shadow(0px 0px 20px #ff009d)
+    }
+
+
+
+
+  #whatsapp:hover{
+    color   :#10c000;
+    filter  : drop-shadow(0px 0px 20px#10c000)
+    }
+
+
+
+
+  #linkedin:hover{
+    color   :#2a1baa;
+    filter  : drop-shadow(0px 0px 20px #00d9ff)
+    }
+    
+
+    #twitter:hover{
+      color   :#00d9ff;
+      filter  : drop-shadow(0px 0px 20px #00d9ff)
+      }
+    
+
+
+  .footer .row ul li{
+    display :inline-block;
+    margin  :0px 30px;
+    }
+    
+  .footer .row a i{
+    font-size :2em;
+    margin    :0% 1%;
+    }
+    
+

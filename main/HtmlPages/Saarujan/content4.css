@@ -1,0 +1,299 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: poppins;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+ 
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: poppins;
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+/*--header--------------------------*/
+
+svg{
+    width: 25px;
+}
+.logo img {
+    height: 50px;
+  }
+
+header{
+    display: flex;
+    padding: 5px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333333;
+    color: #fff;
+}
+header .logo{
+    font-weight: bold;
+}
+header .menu{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-weight: 400;
+}
+
+
+
+
+nav ul {   
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+  
+nav ul li {
+    
+    margin: 0 10px;
+}
+  
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+  
+nav ul li a:hover,
+nav ul li.active a {
+    background-color: #555555;
+    border-radius: 5px;
+}
+
+
+#title {
+    text-align: center;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 50px;
+    max-width: 300px;
+    height: auto;
+    margin: 10px auto;
+    font-size: 2.5em;
+    color: #333;
+}
+
+
+h2 {font-family: Bubbles , Tahoma, Verdana, sans-serif;}
+
+.Description {font-family: Bubbles, Tahoma, Geneva, Verdana, sans-serif;}
+
+.BackImage {width: 30%;
+  height: 100%;
+  border-radius: 30px;}
+
+.allright {text-align: center;}
+
+
+
+ 
+/*--blog--------------------------*/
+#blog{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+.blog-heading{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ 
+}
+.blog-heading span{
+    color: #f33c3c;
+}
+.blog-heading h3{
+    font-size: 2.4rem;
+    color: #2b2b2b;
+    font-weight: 600;
+}
+.blog-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    flex-wrap: wrap;
+}
+ 
+.blog-box{
+    width:350px;
+    background-color: #ffffff;
+    border: 1px solid #ececec;
+    margin: 20px 20px;
+ 
+}
+.blog-img{
+    width:100%;
+    height: auto;
+}
+.blog-img img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.blog-text{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.blog-text span{
+    color: #f33c3c;
+    font-size: 0.9rem;
+}
+.blog-text .blog-title{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #272727;
+}
+.blog-text p{
+    color: #9b9b9b;
+    font-size: 0.9rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 20px 0px;
+}
+.blog-text a{
+    color: #0f0f0f;
+}
+.blog-text a:hover{
+    color: #c74242;
+    transition: all ease 0.3s;
+}
+
+.blog-text .short {
+    display: block;
+}
+
+.blog-text .long {
+    display: none;
+}
+
+.blog-text .show-more {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #007BFF;
+    cursor: pointer;
+}
+ 
+ 
+@media(max-width:1250px){
+ 
+    .blog-box{
+        width: 300px;
+    }
+} 
+@media(max-width:1100px){
+    .blog-box{
+        width:70%;
+    }
+}
+ 
+@media(max-width:550px){
+   
+    .blog-box{
+        margin: 20px 10px;
+        width: 100%;
+    }
+    #blog{
+        padding:20px;
+    }
+}
+
+.footer{
+    background-color: black;
+    padding     :5px 2px;
+    font-family : 'Play', sans-serif;
+    text-align  :center;
+    }
+    
+  .footer .row{
+    width     :100%;
+    margin    :1% 0%;
+    padding   :0.6% 0%;
+    color     :rgb(209, 84, 84);
+    font-size :0.8em;
+    }
+    
+  .footer .row a{
+    text-decoration :none;
+    color           :gray;
+    transition      :0.5s;
+    }
+    
+    
+  .footer .row a:hover{
+    color     :#b2b899;
+    filter    : drop-shadow(0px 0px 20px rgb(188, 253, 76));
+    margin    : 30px;
+    }
+  
+  #facebook:hover{
+    color   :#4244c7;
+    filter  : drop-shadow(0px 0px 20px #001efd)
+    }
+
+
+
+      #insta:hover{
+    color   :#ff009d;
+    filter  : drop-shadow(0px 0px 20px #ff009d)
+    }
+
+
+
+
+  #whatsapp:hover{
+    color   :#10c000;
+    filter  : drop-shadow(0px 0px 20px#10c000)
+    }
+
+
+
+
+  #linkedin:hover{
+    color   :#2a1baa;
+    filter  : drop-shadow(0px 0px 20px #00d9ff)
+    }
+    
+
+    #twitter:hover{
+      color   :#00d9ff;
+      filter  : drop-shadow(0px 0px 20px #00d9ff)
+      }
+    
+
+
+  .footer .row ul li{
+    display :inline-block;
+    margin  :0px 30px;
+    }
+    
+  .footer .row a i{
+    font-size :2em;
+    margin    :0% 1%;
+    }
+
+.allright {text-align: center;}

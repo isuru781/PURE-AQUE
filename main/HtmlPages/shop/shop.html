@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PURE AQUA(SHOP)</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="shop.css">
+    <link rel="stylesheet" href="homestyle.css">
+    <script src="shop.js"></script>
+</head>
+
+
+<body>
+
+    <header>
+        <div class="logo">
+          <img src="logo.png" alt=" Logo">
+        </div>
+        <nav>
+          <ul>
+            <li class="active"><a href="../home.html">Home</a></li>
+            <li><a href="../Saarujan/gallery.html">Gallery</a></li>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="../user_profile3/userprofile.html">User Profile</a></li>
+            <li><a href="../feedback.html">Feedback</a></li>
+            <li><a href="../Saarujan/sitemap.html">Sitemap</a></li>
+            <li><a href="../team3/team.html">Team</a></li>
+          </ul>
+        </nav>
+      </header>
+    <h1 id="shop">PURE AQUA SHOP</h1>
+    <button class="topLeftButton" id="topLeftButton" onclick="openCart()"></button>
+    <!-- all products -->
+    <div class="products">
+        <div class="product">
+            
+            <div class="main-topic"><img src="filter.jpeg" alt="water filter ">
+                <span class="hider" >This filter is kill 99% bactiria in water </span>
+            </div>
+
+
+            <h2>Water Filters</h2>
+            <p>$20</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity('quantity1')">-</button>
+                <input type="number" id="quantity1" value="1" min="1">
+                <button onclick="increaseQuantity('quantity1')">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('Water Filters', 20, document.getElementById('quantity1').value)">Add to Cart</button>
+        </div>
+        <div class="product">
+           
+            <div class="main-topic"> <img src="rofilter.jpg" alt="ro filter">
+                <span class="hider" >This filter is use to remove contaminants from the water. </span>
+            </div>
+            <h2>Reverse Osmosis Systems</h2>
+            <p>$100</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity('quantity2')">-</button>
+                <input type="number" id="quantity2" value="1" min="1">
+                <button onclick="increaseQuantity('quantity2')">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('Reverse Osmosis Systems', 100, document.getElementById('quantity2').value)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <div class="main-topic"> <img src="softener.jpg" alt="water softer">
+                <span class="hider" >This filter is remove hardness clasium and minarals. </span>
+            </div>
+            <h2>water softer </h2>
+            <p>$150</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity('quantity3')">-</button>
+                <input type="number" id="quantity3" value="1" min="1">
+                <button onclick="increaseQuantity('quantity3')">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('water softer ', 150, document.getElementById('quantity3').value)">Add to Cart</button>
+        </div>
+        <div class="product">
+            
+            <div class="main-topic"> <img src="uv.jpg" alt="uv filtrer">
+                <span class="hider" >This filter is removing jerms using uv light </span>
+            </div>
+            <h2>uv filter </h2>
+            <p>$784</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity('quantity4')">-</button>
+                <input type="number" id="quantity4" value="1" min="1">
+                <button onclick="increaseQuantity('quantity4')">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('uv filter ', 784, document.getElementById('quantity4').value)">Add to Cart</button>
+        </div>
+        <div class="product">
+            
+            <div class="main-topic"><img src="alkine.jpg" alt="alkine filter">
+                <span class="hider" >This filter is using decrese pH level in water </span>
+            </div>
+            <h2>Alkaline Water Systems</h2>
+            <p>$300</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity('quantity5')">-</button>
+                <input type="number" id="quantity5" value="1" min="1">
+                <button onclick="increaseQuantity('quantity5')">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('Alkaline Water Systems', 300, document.getElementById('quantity5').value)">Add to Cart</button>
+        </div>
+
+
+        <div class="product">
+           
+            <div class="main-topic"> <img src="distil.jpg" alt=" water distiliser" >
+                <span class="hider" >This filter is using to distilise to water</span>
+            </div>
+            <h2>water distiliser</h2>
+            <p>$234</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity('quantity6')">-</button>
+                <input type="number" id="quantity6" value="1" min="1">
+                <button onclick="increaseQuantity('quantity6')">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('water distiliser', 234, document.getElementById('quantity6').value)">Add to Cart</button>
+        </div>
+        <div class="product">
+            
+            <div class="main-topic"><img src="product7.jpg" alt="Whole House Filtration Systems">
+                <span class="hider" >This filter is using to didtribut filter water to all house</span>
+            </div>
+            <h2>Whole House Filtration Systems</h2>
+            <p>$130</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity('quantity7')">-</button>
+                <input type="number" id="quantity7" value="1" min="1">
+                <button onclick="increaseQuantity('quantity7')">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('Whole House Filtration Systems', 130, document.getElementById('quantity7').value)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <div class="main-topic"> <img src="shower.jpg" alt="shower">
+                <span class="hider" >This filter is using to shower fiterd water </span>
+            </div>
+            <h2>Shower Filters</h2>
+            <p>$3320</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity('quantity8')">-</button>
+                <input type="number" id="quantity8" value="1" min="1">
+                <button onclick="increaseQuantity('quantity8')">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('Shower Filters', 3320, document.getElementById('quantity8').value)">Add to Cart</button>
+        </div>
+        <div class="product">
+           
+            <div class="main-topic">  <img src="replace.jpg" alt="Replacement Filters and Cartridges">
+                <span class="hider" >This is using to replace  filtering equiment to water filter</span>
+            </div>
+            <h2>Replacement Filters and Cartridges</h2>
+            <p>$1230</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity('quantity9')">-</button>
+                <input type="number" id="quantity9" value="1" min="1">
+                <button onclick="increaseQuantity('quantity9')">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('Replacement Filters and Cartridges', 1230, document.getElementById('quantity9').value)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <div class="main-topic"><img src="bottle.jpg" alt="Bottled Water">
+                <span class="hider" >This is drining water </span>
+            </div>
+            <h2>Bottled Water</h2>
+            <p>$30</p>
+            <div class="quantity-control">
+                <button onclick="decreaseQuantity('quantity10')">-</button>
+                <input type="number" id="quantity10" value="1" min="1">
+                <button onclick="increaseQuantity('quantity10')">+</button>
+            </div>
+            <button class="add-to-cart" onclick="addToCart('Bottled Water', 30, document.getElementById('quantity10').value)">Add to Cart</button>
+        </div>   
+    </div>
+    
+<!-- cart funtion -->
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeCart()">&times;</span><!--closing tag -->
+            <h2 style="text-align: center;">Cart</h2>
+            <div id="cart"><p>Your cart is empty</p></div><!--empty cart show this-->
+            <button class="add-to-cart" onclick="showPaymentForm()">process payment </button><!--payment button -->
+            <button class="add-to-cart" onclick="resetCart()">reset cart</button><!--reset button-->
+        </div>
+        
+        <!-- Payment form -->
+        <div id="paymentForm" class="modal1">
+        <div class="modal-content1">
+            <h2>Payment Information</h2>
+            <div id="paymentTotal" class="payment-total">
+                Total: $0.00
+            </div>
+            <form id="paymentDetails" onsubmit="pay()">
+                <fieldset id="card">
+                <legend>card details</legend>
+                <label for="cardNumber">Card Number:</label>
+                <input type="text" id="cardNumber" name="cardNumber" placeholder="0000 0000 0000 0000" maxlength="16" minlength="16" required><br>
+                <label for="expirationDate">Expiration Date:</label>
+                <input type="text" id="expirationDate" name="expirationDate" placeholder="MM/YY" maxlength="4" minlength="4" required><br>
+                <label for="cvv" >CVV:</label>
+                <input type="text" id="cvv" name="cvv" maxlength="3" minlength="3" placeholder="123" required><br>
+            </fieldset>
+            <fieldset>
+                <legend>personal information</legend>
+                        <label for="fname" >first name</label>
+                            <input type="text" id="fname" placeholder="enter your first name" ><br>
+                        <label for="surname" >sur name</label>
+                            <input type="text" id="surname" placeholder="enter your sur name"><br>
+                        <label for="email" >E-mail</label>
+                            <input type="email" id="email" ><br>
+                        <label for="adress" >adress</label>
+                            <input type="text" id="adress" placeholder="enter adress" maxlength="10000" minlength="8"><br>
+                  </fieldset>
+                  <fieldset>     
+                       <legend>delivary method</legend>
+                       <div class="radioalign" >
+                            <label for="selection">pickup</label>
+                            <input type="radio" id="selection" name="del"><br>
+                            <label for="post">post</label>
+                            <input type="radio" id="post" name="del">
+                        </div>
+                </fieldset>
+                <button class="add-to-cart" type="submit">Pay Now</button>
+                <button class="add-to-cart" type="reset">reset</button>
+            </form>
+        </div>
+        </div>
+     
+    </div>
+
+    <!--footer  -->
+    <div class="footer">
+        <div class="row">
+            <ul>
+                <li><a href="#">Back to TOP</a></li>
+                <li><a href="mailto:isuru.20232884@iit.ac.lk">Send Email</a></li>
+                <li><a href="../user_profile3/userprofile.html">User Profile</a></li>
+                <li><a href="../Saarujan/sitemap.html">Sitemap</a></li>
+                <li><a href="../page_editor1/page_editor.html">Editors page</a></li>
+            </ul>
+        </div>
+  <hr>
+      <p class="allright">&copy; 2024 | Pure Aqua Website | All Rights Reserved</p>
+    </div>
+</body>
+</html>
